@@ -1,5 +1,4 @@
 $(document).ready(function (){
-    alert('Hola')
 
    $('input[type="submit"]').on("click", function(event) {
         /*var first_name = $('input[name="first_name"]').val();
@@ -15,33 +14,34 @@ $(document).ready(function (){
                 'first_name' : first_name
             }
         });*/
-            
+
 
         var first_name =$('#first_name').val();
         var last_name =$('#last_name').val();
-        var gender =$('input[name="gender"]:checked').val(); /*esto me devuelve un array de coinsidencia*/
-        var interest =$('input[name="interest"]:checked'); /*checked (selector)*/
-        var interests =  new Array();           
-                     
-        for (var i = 0; i < interest.length; i ++) {
-            var temp_interest = interest[i];
-            interests.push(temp_interest.value);
+        var old =$('input[name="old"]:checked').val(); /*esto me devuelve un array de coinsidencia*/
+        var hobbys =$('input[name="hobbys"]:checked'); /*checked (selector)*/
+        var textarea =$('#textarea').val();
+        var hobbyst =  new Array();
+
+        for (var i = 0; i < hobbys.length; i ++) {
+            var temp_hobbys = hobbys[i];
+            hobbyst.push(temp_hobbys.value);
         }
-            
+
         var payload =  {
             'first_name' :first_name,
             'last_name' :last_name,
-            'gender' : gender,
-            'interests' :interests,
-            
+            'hobbyst' :hobbyst,
+            'textarea' :textarea,
+            'old' : old
         }
         $.post('/find',payload);
         $.get('/find',payload);
 
 
-       
 
-        
+
+
         });
 
 });

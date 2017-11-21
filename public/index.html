@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+		<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+	<form method="POST">
+	<p>
+		<label for="first_name">Nombre</label>
+		<input type="text" name="first_name" id="first_name" required  class="imput-text"/>
+	</p>
+
+	<p>
+		<label for="last_name">Apellidos</label>
+		<input type="text" name="last_name" required  class="imput-text" id="last_name" />
+	<p>
+		<label for="">old</label>
+		<input type="radio" name="old" value="f" id="15-25" />
+		<label for="edad_rango">  5-15</label>
+		<input type="radio" name="old" value="m" id="15-25" />
+		<label>15-25</label>
+	</p>
+
+	<p>
+		<label for="">hobbys</label>
+		<input type="checkbox" name="hobbys" value="montar skate" id="montar skate" />
+		<label for="dev">Montar Skate</label>
+		<input type="checkbox" name="hobbys" value="leer"  id="leer" />
+		<label for="dev">Leer</label>
+		<input type="checkbox" name="hobbys" value="nader" id="nadar" />
+		<label for="dev">Nadar</label>
+	</p>
+
+	<textarea rows="4" cols="50">
+
+</textarea>
+
+
+		<input type="submit" value="registrar"/>
+	</form>
+</body>
+</html>

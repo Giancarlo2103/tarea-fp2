@@ -1,6 +1,12 @@
-
-
+body{
+  background: #ededed;
+  font-family: sans-serif;
+  text-align: center;
+}
 .imput-text {
   border-radius: 5px;
   padding: 5px;
+}
+#message{
+  display: block;
 }
